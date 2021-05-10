@@ -1,0 +1,40 @@
+IO.puts "*** POWERS"
+IO.puts Lab2_1.powers()
+IO.puts Lab2_1.powers(0)
+IO.puts Lab2_1.powers(0,0)
+IO.puts Lab2_1.powers(1)
+IO.puts Lab2_1.powers(3,2)
+IO.puts Lab2_1.powers(3,2.12)
+IO.puts Lab2_1.powers(2.12,3)
+IO.puts Lab2_1.powers(2.123,-3)
+IO.puts Lab2_1.powers("base",2.12)
+IO.puts Lab2_1.powers(-3,2.12)
+IO.puts Lab2_1.powers("asdf")
+
+IO.puts "\n*** ANY FUNCTION"
+IO.puts Lab2_2.all(12313)
+IO.puts Lab2_2.all([12,1.123,4124])
+IO.puts Lab2_2.all([12,"123",4124])
+IO.puts Lab2_2.all([12,[1,2,3],4124])
+IO.puts Lab2_2.all([1,2,3,4,5,6,7,8])
+IO.puts Lab2_2.all([1,2])
+IO.puts Lab2_2.all([1])
+IO.puts "\n*** EVEN FUNCTION"
+IO.puts Lab2_2.even([12,"123",4124])
+IO.puts Lab2_2.even([12,[1,2,3],4124])
+IO.puts Lab2_2.even([1,2])
+IO.puts Lab2_2.even([2,2,4,6,12356])
+IO.puts "\n*** ODD FUNCTION"
+IO.puts Lab2_2.odd([12,"123",4124])
+IO.puts Lab2_2.odd([12,[1,2,3],4124])
+IO.puts Lab2_2.odd([1,2])
+IO.puts Lab2_2.odd([1,15121,125129,1245])
+
+IO.puts "\n*** QUESTION 3"
+IO.inspect Lab2_3.enum_lab3([1,2,3,4],fn(n)->n+1 end)
+IO.inspect Lab2_3.enum_lab3([1,2,3,4],fn(n)->n*2 end)
+IO.inspect Lab2_3.enum_lab3([],fn(n)->n*3 end)
+IO.inspect Lab2_3.enum_lab3([1],fn(n)->n*3 end)
+IO.inspect Lab2_3.enum_lab3(2,fn(n)->n*3 end)
+IO.inspect Lab2_3.enum_lab3([1,2,"lorem",4],fn(n)->n+1 end)
+IO.inspect Lab2_3.enum_lab3(["lorem0","lorem","lorem2"],fn(n)->n+1 end)
