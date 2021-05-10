@@ -1,0 +1,32 @@
+*Lab3> lab3map Data.Char.toUpper "Hello, World!"
+"HELLO, WORLD!"
+*Lab3> lab3map (\x -> -x) [1,2,3,-4]
+[-1,-2,-3,4]
+*Lab3> lab3map Data.Char.isLower "Hello, World!"
+[False,True,True,True,True,False,False,False,True,True,True,True,False]
+
+
+*Lab3> nth 1 []
+*** Exception: Empty list
+CallStack (from HasCallStack):
+  error, called at lab3.hs:7:16 in main:Lab3
+*Lab3> nth 2 [12,123,1234,12345]
+123
+*Lab3> nth 200 [12,123,1234,12345]
+12345
+*Lab3> nth (-200) [12,123,1234,12345]
+12
+
+*Lab3> a = Polygon 5 3
+*Lab3> a
+5-side polygon at 3.0 lengths.
+*Lab3> b = Polygon 4 3
+*Lab3> area a
+15.484296
+*Lab3> area b
+9.0
+*Lab3> a == b
+False
+*Lab3> a /= b
+True
+*Lab3> samearea a b
